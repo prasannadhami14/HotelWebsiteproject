@@ -62,7 +62,7 @@
   left: 0;
   right: 0;
   margin: auto;
-  width:0%;
+  width: 0%;
   content: ".";
   color: transparent;
   background: #ffff;
@@ -86,7 +86,7 @@ nav.navbar ul li a:hover:after {
 /*hotel description*/
 .header-desc {
   position: relative;
-  top: 4.5rem;
+  top: 4.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -161,60 +161,78 @@ nav.navbar ul li a:hover:after {
 .HomeImg img {
   object-fit: contain;
   position: absolute;
-  top: 9rem;
+  top: 10rem;
   height: 600px;
-  width: 100%;
+  max-width: 100%;
 }
-
-.welcome{
+/* welcome page */
+.welcome {
   background-color: var(--main-color);
   max-width: 100%;
   height: 150vh;
   z-index: 0;
 }
-.wlcHeader{
+.wlcHeader {
   position: relative;
-  color:#fff;
- 
+  color: #fff;
   font-weight: 200;
-  
   font-family: sans-serif;
 }
-#wlcText{
+#wlcText {
   position: absolute;
-  top:22.8rem;
-  margin-left: 19rem;
+  top: 24rem;
+  margin-left: 19.5rem;
   margin-top: 4rem;
   font-size: 45px;
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-#HotelText{
+#HotelText {
   position: absolute;
-  top:25.5rem;
+  top: 27rem;
   margin-top: 4rem;
-  margin-left: 19rem;
-  color:var(--header-color);
+  margin-left: 22.5rem;
+  color: var(--header-color);
   font-weight: 1000;
   font-size: 40px;
   text-transform: uppercase;
 }
-.wlcImg img{
+.wlcImg {
   position: absolute;
-  top:26rem;
-  left: 24rem;
-  width: 100%;
-  height: 450px;
-  object-fit: contain;
-  
+  top: 28rem;
+  width: 500px;
+  left: 57.rem;
 }
-.wlcHeader p{
+.wlcImg img {
+  width: 550px;
+  height: 555px;
+  object-fit: contain;
+}
+.wlcHeader #intro {
   position: absolute;
-  top:33rem;
-  right:20rem;
+  top: 35rem;
+  right: 20rem;
   z-index: 100;
-  margin-left: 1.2rem;
-  margin-right: 11.2rem;
-  font-size:18px;
+  margin-left: 3rem;
+  margin-right: 15rem;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  line-height: 23px;
+}
+.description{
+ position: relative;
+ top:38.5rem;
+ margin-left: 5rem;
+ margin-right: 37rem;
+ line-height: 23px;
+ font-size: 18px;
+ letter-spacing: 0.5px;
+}
+.welcome strong{
+position: relative;
+ top:38rem;
+ margin-left: 3rem;
+ margin-right: 37rem;
+ font-size: 20px;
 }
