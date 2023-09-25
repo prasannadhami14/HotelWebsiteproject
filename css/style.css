@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+
+  --scale-factor: 0.5234567946471576;
+  --main-color: #01243b;
+  --header-color: #deada1;
+}
+.container {
+  background: var(--main-color);
+  color: var(--header-color);
+  height: 280px;
+  /* width: 100%; */
+}
+
+/*Navigation bar*/
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: var(--main-color);
+  border-bottom: 1px solid #cccccc;
+  padding: 5px 0;
+}
+.navbar > ul {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+.navbar > ul > li {
+  padding: 1rem 1rem;
+  list-style: none;
+}
+.navbar ul li a {
+  position: relative;
+  color: var(--header-color);
+  text-decoration: none;
+  font-family: "Kanit", sans-serif;
+  font-size: 20px;
+  display: block;
+  padding: 10px;
+  font-weight: 800;
+  margin: 0 10px;
+}
+/* navbar hover effects */
+.navbar ul li a,
+.navbar ul li a:after,
+.navbar ul li a:before {
+  transition: all 0.5s;
+}
+.navbar ul li a:hover {
+  color: var(--header-color);
+}
+.navbar ul li a::after {
+  position: absolute;
+  bottom: 0.8rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width:0%;
+  content: ".";
+  color: transparent;
+  background: #ffff;
+  height: 1px;
+}
+nav.navbar ul li a:hover:after {
+  width: 100%;
+}
+/*Header(THE HOTEL)*/
+.container .header {
+  position: relative;
+  top: 5.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: 1000;
+  font-size: 100px;
+  z-index: 1;
+}
+/*hotel description*/
+.header-desc {
+  position: relative;
+  top: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 5px;
+  color: #fff;
+  margin-bottom: 2.8rem;
+}
+
+/* vertical lines  left side*/
+.Vl-1 {
+  position: absolute;
+  z-index: 0;
+  top: 7.7rem;
+  background-color: var(--header-color);
+  height: 90px;
+  width: 15px;
+}
+.Vl-2 {
+  position: absolute;
+  z-index: 0;
+  top: 7.7rem;
+  left: 1.3rem;
+  background-color: var(--header-color);
+  height: 90px;
+  width: 5px;
+}
+.Vl-3 {
+  position: absolute;
+  z-index: 0;
+  top: 7.7rem;
+  left: 2rem;
+  background-color: var(--header-color);
+  height: 90px;
+  width: 2px;
+}
+/* vertical lines  right side*/
+
+.Vl-4 {
+  position: absolute;
+  z-index: 0;
+  top: 7.7rem;
+  left: 91.1rem;
+  background-color: var(--header-color);
+  height: 90px;
+  width: 15px;
+}
+.Vl-5 {
+  position: absolute;
+  z-index: 0;
+  top: 7.7rem;
+  left: 90.4rem;
+  background-color: var(--header-color);
+  height: 90px;
+  width: 5px;
+}
+.Vl-6 {
+  position: absolute;
+  z-index: 0;
+  top: 7.7rem;
+  left: 89.9rem;
+  background-color: var(--header-color);
+  height: 90px;
+  width: 2px;
+}
+/* homepage background img */
+/* .HomeImg{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  max-width:100%;
+} */
+.HomeImg img {
+  object-fit: contain;
+  position: absolute;
+  top: 9rem;
+  height: 600px;
+  width: 100%;
+}
+/* .welcome::before{
+  content:" ";
+  height: 2px;
+} */
+.welcome{
+  position: absolute;
+  background-color: var(--main-color);
+  max-width: 100%;
+  height: auto;
+}
+.welcome span,p{
+  position: absolute;
+  top:30rem;
+  left:1rem;
+}
+.wlcImg img{
+  position: absolute;
+  top:23rem;
+  left: 47.5rem;
+  max-width: 100%;
+  height: 90vh;
+  object-fit: contain;
+  
+}
