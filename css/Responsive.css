@@ -1,0 +1,164 @@
+
+/* <!-- CSS --> */
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        
+      }
+    
+      .nav-links {
+        text-align: center;
+        display: none;
+      }
+    
+      .nav-links.open {
+        display: block;
+      }
+      .hamburger-menu-label {
+        display: block;
+        
+      }
+      
+  .header {
+    text-align: center;
+  }
+  .header span {
+    margin-top:-2rem;
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  /* vertical lines  right side*/
+
+  .Vl-4 {
+    left: 26.4rem;
+  }
+  .Vl-5 {
+    left: 25.7rem;
+  }
+  .Vl-6 {
+    left: 25.2rem;
+  }
+  .header-desc {
+    top: 7rem;
+    margin-left: 3.2rem;
+    margin-right: 2rem;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 28px;
+  }
+  .HomeImg img {
+    top: 5rem;
+  }
+  /* welcome page */
+  .welcome{
+    height: 80vh;
+  }
+  .wlcHeader {
+    bottom: 17rem;
+  }
+  #wlcText {
+    font-size: 45px;
+    letter-spacing: 5px;
+    margin-left: 3.5rem;
+    letter-spacing: 3px;
+  }
+  #HotelText {
+    margin-top: 3rem;
+    margin-left: 5rem;
+    font-weight: 800;
+    font-size: 45px;
+  }
+  .wlcImg {
+    top: 35rem;
+  }
+  .wlcImg img {
+    position: relative;
+    height: 425px;
+    right: 55.3rem;
+  }
+  .VL-8,
+  .VL-7 {
+    display: none;
+  }
+/* welcome description */
+.welcome{
+    height:280vh;
+}
+.wlcHeader #intro {
+    top: 63rem;
+    right: 0rem;
+    
+    margin-left: 1.6rem;
+    margin-right: 0.5rem;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    line-height: 25px;
+  }
+  
+  /* footer */
+
+  .social-media-icons {
+    margin-bottom: -3rem;
+    margin-left:25rem;
+    left:-22rem;
+    top:0.5rem;
+   
+  }
+  
+  .social-media-icons i {
+    font-size: 25px;
+    padding-right: 4rem;
+    
+  
+  }
+  .contact-information {
+    margin-top:5rem;
+  }
+  /* about us page Responsiveness */
+
+  .aboutHeader{
+    font-size: 30px;
+    top:1.5rem;
+  }
+  .aboutImg img{
+   
+    height: 200px;
+    width:100%;
+   
+  }
+  .OurTeam{
+    top:13rem;
+  }
+  .card1 {
+    left: 67px;
+    top:14rem;
+    
+  }
+  .card2 {
+    left: 67px;
+    top:19.4rem;
+    
+  }
+  .card3 {
+    left: 67px;
+    top:26rem;
+    
+  }
+  .card4 {
+    left: 67px;
+    top:34rem;
+    
+  }
+}
