@@ -1,15 +1,9 @@
 
-/* <!-- CSS --> */
-
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-}
 
 @media (max-width: 768px) {
-    
+    .container{
+      height:40vh;
+    }
     .navbar {
         display: flex;
         flex-direction: column;
@@ -34,83 +28,98 @@
     text-align: center;
   }
   .header span {
-    margin-top:-2rem;
-    font-size: 50px;
+    margin-top: -2rem;
+    font-size: 60px;
     line-height: 50px;
   }
 
   /* vertical lines  right side*/
 
   .Vl-4 {
-    left: 26.4rem;
+    left: 26.9rem;
   }
   .Vl-5 {
-    left: 25.7rem;
+    left: 26.2rem;
   }
   .Vl-6 {
-    left: 25.2rem;
+    left: 25.7rem;
   }
   .header-desc {
     top: 7rem;
     margin-left: 3.2rem;
     margin-right: 2rem;
     text-align: center;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     line-height: 28px;
   }
+  
   .HomeImg img {
-    top: 5rem;
+    height:380px;
+    right:1.8rem;
   }
   /* welcome page */
   .welcome{
-    height: 80vh;
+    height:160vh;
+    z-index: 0;
   }
-  .wlcHeader {
-    bottom: 17rem;
-  }
+ /* videos */
+ .videos{
+
+  top:79rem;
+  right:3rem;
+ }
+ .videos video{
+  width:400px;
+  height:600px
+ }
   #wlcText {
     font-size: 45px;
-    letter-spacing: 5px;
-    margin-left: 3.5rem;
+    top:6rem;
+    margin-left: 4rem;
+    font-weight: 400;
     letter-spacing: 3px;
   }
   #HotelText {
-    margin-top: 3rem;
-    margin-left: 5rem;
-    font-weight: 800;
-    font-size: 45px;
+      margin-top: 10rem;
+  margin-left: 3rem;
+  font-weight: 800;
+  position: absolute;
+  top:-1rem;
+  right: 6.5rem;
+  font-size: 45px;
+  z-index: 100;
+   
   }
-  .wlcImg {
-    top: 35rem;
-  }
+  /* .wlcImg {
+    top: 3rem;
+  } */
   .wlcImg img {
     position: relative;
     height: 425px;
-    right: 55.3rem;
+    right: 45.2rem;
+    bottom:8rem;
+    width:auto;
   }
   .VL-8,
   .VL-7 {
     display: none;
   }
 /* welcome description */
-.welcome{
-    height:280vh;
-}
-.wlcHeader #intro {
-    top: 63rem;
+
+ #intro {
+    top: 67rem;
     right: 0rem;
-    
     margin-left: 1.6rem;
-    margin-right: 0.5rem;
+    margin-right: 1rem;
     font-size: 16px;
     letter-spacing: 0.2px;
     line-height: 25px;
-  }
   
+  }
+ 
   /* footer */
-
   .social-media-icons {
-    margin-bottom: -3rem;
+    margin-top: 1rem;
     margin-left:25rem;
     left:-22rem;
     top:0.5rem;
@@ -124,22 +133,46 @@
   
   }
   .contact-information {
-    margin-top:5rem;
+    margin-top:2rem;
   }
   /* about us page Responsiveness */
+  .aboutDesc .AbtIntro{
+    top: 19rem;
+    margin-left: 2.5rem;
+    margin-right: 1.5rem;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: 29px;
+  }
+  #aboutText {
+    top: 7rem;
+    margin-left: 5.5rem;
+    margin-top: 4rem;
+    font-size: 50px;
+    font-weight: 400;
 
-  .aboutHeader{
-    font-size: 30px;
-    top:1.5rem;
+    letter-spacing: 1px;
+  }
+  #AbtText {
+    top: 9.5rem;
+    margin-top: 4.8rem;
+    margin-left: 8.9rem;
+    font-weight: 1000;
+    font-size: 50px;
+    letter-spacing: 3px;
   }
   .aboutImg img{
-   
+    top: 2.5rem;
     height: 200px;
     width:100%;
    
   }
   .OurTeam{
-    top:13rem;
+    top:64rem;
+  }
+  .cards{
+    top:50rem;
+    height:90vh;
   }
   .card1 {
     left: 67px;
@@ -160,5 +193,44 @@
     left: 67px;
     top:34rem;
     
+  }
+  #abtFooter{
+    position: relative;
+    top:40rem;
+    margin-top:16rem;
+  }
+  #Hmfooter{
+    position: relative;
+    margin-top:4rem;
+  }
+  /* book now button */
+  .cta {
+    padding: 11px 33px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 1s;
+    box-shadow: 6px 6px 0 black;
+    transform: skewX(-15deg);
+    border: none;
+    left: 12rem;
+    top: 0.5rem;
+    z-index: 100;
+  }
+
+  .modal {
+    padding:2rem;
+    margin-left:0.9rem;
+    margin-top:4rem;
+    max-width: 422px;
+
+  }
+  .button {
+   top:0.5rem;
+    left:4.5rem;
+    width:10rem;
+    font-size: 20px;
+  }
+  .description{
+    padding-top:1.8rem;
   }
 }
